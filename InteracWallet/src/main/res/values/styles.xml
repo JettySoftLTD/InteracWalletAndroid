@@ -1,0 +1,143 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="Theme.Interac_Wallet" parent="Theme.MaterialComponents.Light.DarkActionBar.Bridge"> <!-- "Theme.AppCompat.Light.DarkActionBar"-->
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+        <item name="android:fontFamily">@font/nunitosansregular</item>
+        <item name="android:typeface">serif</item>
+        <item name="actionButtonStyle">@style/AppTheme.Widget.ActionButton</item>
+        <item name="colorControlNormal">#c6c6c6</item>
+        <item name="colorControlActivated">#323d42</item>
+        <!--don't change colorControlActivated to white color-->
+        <item name="android:radioButtonStyle">@style/RadioButton</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:actionButtonStyle">@style/ActionButton</item>
+        <item name="backgroundcolor">@color/white</item>
+
+        <!--<item name="colorSurface">@color/colorPrimaryDark</item>
+        <item name="materialCalendarStyle">@style/Widget.MaterialComponents.MaterialCalendar</item>
+        <item name="materialCalendarFullscreenTheme">@style/ThemeOverlay.MaterialComponents.MaterialCalendar.Fullscreen</item>
+        <item name="materialCalendarTheme">@style/ThemeOverlay.MaterialComponents.MaterialCalendar</item>-->
+    </style>
+
+    <style name="AlertDialogStyle_payu" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+        <item name="android:textColorPrimary">@color/white</item>
+    </style>
+
+    <style name="RadioButton" parent="@android:style/Widget.CompoundButton.RadioButton">
+        <item name="android:button">@drawable/radio_check</item>
+    </style>
+
+    <!--ActionBar items width-->
+    <style name="ActionButton" parent="@android:style/Widget.ActionButton">
+        <item name="android:padding">@dimen/action_button_padding</item>
+    </style>
+
+    <style name="AddToCartDivider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@color/GreyColor</item>
+    </style>
+
+    <style name="AddToCartSubtotalDivider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="AppDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppDialogThemeNoClosing" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+    </style>
+
+    <style name="AppTheme.Widget.ActionButton" parent="@style/Widget.AppCompat.ActionButton">
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">15dp</item>
+    </style>
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_from_bottom</item>
+        <item name="android:windowExitAnimation">@anim/slide_from_top</item>
+    </style>
+
+    <style name="CustomShowcaseTheme" parent="ShowcaseView">
+        <item name="sv_backgroundColor">@color/transparentgreen</item>
+        <item name="sv_showcaseColor">@color/red</item>
+        <item name="sv_buttonText">Close</item>
+        <item name="sv_titleTextAppearance">@style/CustomTitle</item>
+        <item name="sv_detailTextAppearance">@style/CustomText</item>
+    </style>
+
+    <style name="CustomTitle" parent="TextAppearance.ShowcaseView.Title.Light">
+        <item name="android:textColor">@color/red</item>
+        <item name="android:textSize">@dimen/dimen_30sp</item>
+    </style>
+
+    <style name="CustomText" parent="TextAppearance.ShowcaseView.Detail.Light">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/dimen_25sp</item>
+    </style>
+
+    <style name="full_screen_dialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowMinWidthMajor">99%</item>
+        <item name="android:windowMinWidthMinor">99%</item>
+        <item name="android:layout_marginTop">7.5dp</item>
+    </style>
+
+    //blue dot
+    <style name="bluevectordot" parent="BlueVectorDot">
+        <item name="bluevectordot">@color/bluefade</item>
+    </style>
+
+    <style name="BlueVectorDot">
+        <item name="bluevectordot">@color/bluefade</item>
+    </style>
+
+    //red dot
+    <style name="redvectorDot" parent="RedVectorDot">
+        <item name="bluevectordot">@color/red</item>
+    </style>
+
+    <style name="RedVectorDot">
+        <item name="bluevectordot">@color/red</item>
+    </style>
+
+    //green dot
+    <style name="greenvectorDot" parent="GreenVectorDot">
+        <item name="bluevectordot">@color/pricegreen</item>
+    </style>
+
+    <style name="GreenVectorDot">
+        <item name="bluevectordot">@color/pricegreen</item>
+    </style>
+
+    //default white
+
+    //colorprimarydark
+
+    <style name="colorprimaryvectordot" parent="ColorPrimaryVectorDot">
+        <item name="bluevectordot">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="ColorPrimaryVectorDot">
+        <item name="bluevectordot">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="MtButtonStyle"
+        parent="Widget.MaterialComponents.Button">
+        <item name="materialThemeOverlay">@style/GreenButtonThemeOverlay</item>
+    </style>
+
+    <style name="GreenButtonThemeOverlay">
+        <item name="colorPrimary">@color/pricegreen</item>
+    </style>
+
+</resources>

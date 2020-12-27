@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rotate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fromDegrees="-90"
+    android:pivotX="50%"
+    android:pivotY="50%"
+    android:toDegrees="990"><!--1080 is 3 loop instead of 1 in amt same time-->
+    <shape
+        android:shape="ring"
+        android:useLevel="false"
+            android:thickness="4dp">
+        <gradient
+            android:centerColor="#00fd1d1d"
+            android:centerY="0.6"
+            android:endColor="@color/colorPrimaryDark"
+            android:startColor="@color/transparent"
+            android:type="sweep"
+            android:useLevel="false" />
+    </shape>
+</rotate>

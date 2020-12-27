@@ -1,0 +1,3 @@
+include ':InteracWallet'
+include ':app'
+rootProject.name = "Interac_Wallet"
